@@ -1,4 +1,4 @@
-from pipeline.compressors import CompressorBase
+from ..compressors import CompressorBase
 
 
 class JSMinCompressor(CompressorBase):

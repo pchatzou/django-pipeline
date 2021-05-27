@@ -6,7 +6,7 @@ from django.contrib.staticfiles.finders import BaseFinder, BaseStorageFinder, fi
 from django.utils._os import safe_join
 from os.path import normpath
 
-from pipeline.conf import settings
+from .conf import settings
 
 
 class PipelineFinder(BaseStorageFinder):

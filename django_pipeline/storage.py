@@ -21,7 +21,7 @@ class PipelineMixin(object):
         if dry_run:
             return
 
-        from pipeline.packager import Packager
+        from .packager import Packager
         packager = Packager(storage=self)
         for package_name in packager.packages['css']:
             package = packager.package_for('css', package_name)

@@ -3,12 +3,12 @@ from django.contrib.staticfiles.finders import find
 from django.core.files.base import ContentFile
 from django.utils.encoding import smart_bytes
 
-from pipeline.compilers import Compiler
-from pipeline.compressors import Compressor
-from pipeline.conf import settings
-from pipeline.exceptions import PackageNotFound
-from pipeline.glob import glob
-from pipeline.signals import css_compressed, js_compressed
+from .compilers import Compiler
+from .compressors import Compressor
+from .conf import settings
+from .exceptions import PackageNotFound
+from .glob import glob
+from .signals import css_compressed, js_compressed
 
 
 class Package(object):

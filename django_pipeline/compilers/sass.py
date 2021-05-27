@@ -1,7 +1,7 @@
 from os.path import dirname
 
-from pipeline.conf import settings
-from pipeline.compilers import SubProcessCompiler
+from ..conf import settings
+from ..compilers import SubProcessCompiler
 
 
 class SASSCompiler(SubProcessCompiler):

@@ -6,7 +6,7 @@ import django
 from django.contrib.staticfiles import finders
 from django.contrib.staticfiles.storage import staticfiles_storage
 
-from pipeline.finders import PipelineFinder
+from .finders import PipelineFinder
 
 
 class Collector(object):

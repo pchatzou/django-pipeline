@@ -4,11 +4,11 @@ from django.conf.settings import settings as django_settings
 from django.contrib.staticfiles.finders import get_finders
 from django.contrib.staticfiles.storage import staticfiles_storage
 
-from pipeline.conf import settings
+from .conf import settings
 
 from manifesto import Manifest
 
-from pipeline.packager import Packager
+from .packager import Packager
 
 
 class PipelineManifest(Manifest):

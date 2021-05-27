@@ -14,7 +14,7 @@ from urllib.parse import quote
 
 from django.utils.encoding import smart_str
 
-from pipeline.conf import settings
+from .conf import settings
 
 
 def to_class(class_str):

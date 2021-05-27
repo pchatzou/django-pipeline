@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
-from pipeline.conf import settings
-from pipeline.compressors import SubProcessCompressor
+from ..conf import settings
+from ..compressors import SubProcessCompressor
 
 
 class TerserCompressor(SubProcessCompressor):

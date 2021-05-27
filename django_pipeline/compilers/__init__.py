@@ -7,9 +7,9 @@ from django.contrib.staticfiles import finders
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.core.files.base import ContentFile
 
-from pipeline.conf import settings
-from pipeline.exceptions import CompilerError
-from pipeline.utils import to_class, set_std_streams_blocking
+from ..conf import settings
+from ..exceptions import CompilerError
+from ..utils import to_class, set_std_streams_blocking
 
 
 class Compiler(object):

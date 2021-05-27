@@ -9,9 +9,9 @@ from itertools import takewhile
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.utils.encoding import smart_bytes, force_text
 
-from pipeline.conf import settings
-from pipeline.exceptions import CompressorError
-from pipeline.utils import to_class, relpath, set_std_streams_blocking
+from ..conf import settings
+from ..exceptions import CompressorError
+from ..utils import to_class, relpath, set_std_streams_blocking
 
 URL_DETECTOR = r"""url\((['"]?)\s*(.*?)\1\)"""
 URL_REPLACER = r"""url\(__EMBED__(.+?)(\?\d+)?\)"""
